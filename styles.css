@@ -3,6 +3,8 @@
 
 /*Colors:
 
+FFFFFF - White
+
 FFFF00- Accent Yellow
 
 41ACD2- Accent Blue
@@ -14,4 +16,21 @@ FFFF00- Accent Yellow
 1E1E2E- Background Blue
 
 */
+body{
+    background-image: url("../images/dashboardBackground.png");
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    background-attachment: fixed;
+    background-color: #1E1E2E;
+}
+
+h1, h2, h3, h4, h5, h6{
+    color: #FFFFFF !important;
+}
+
+img{
+  max-width: 100%;
+  height: auto;
+}
 
