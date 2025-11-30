@@ -1,73 +1,249 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>My Information Dashboard</title>
+    <meta name="User Dashboard Default Main Page - My Information " content="My Information Dashboard" description="one of two main dashboard pages on the My Information tab">
+    <link href="css/styles.css" type="text/css" rel="stylesheet" />
+    <!--Link Bootstrap-5-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
 
+    <!-- Import Lato font from Google Fonts-->
+    <link href='https://fonts.googleapis.com/css?family=Lato' rel='stylesheet' type='text/css'>
+</head>
+
+<body>
+<!--Nav Bar (center DahVarsity AI logo included in background image, buttons)-->
+    <nav>
+        <div id="navbar" class="container-fluid text-center" style="min-height: fit-content">
+            <div class="row mt-5 mx-auto">
+                <div class="col-2">
+                    <!--Volume Icon Button (not implemented) Left-Aligned-->
+                    <img src="images/volumeIcon.png" alt="Volume Icon" class="navIcon" id="volumeIcon">
+                </div>
+                <div class="col-8">
+                    <!--DahVarsity AI Logo Image Centered-->
+                    <img src="images/dahVarsityAILogo.png" alt="DahVarsity AI Logo" class="navLogo" id="dahVarsityAILogo">
+                </div>
+                <div class="col-2">
+                    <!--Menu Bar Icon (not implemented) Right-Aligned-->
+                    <img src="images/menuBar.png" alt="Menu Bar Icon" class="navIcon" id="menuBarIcon">   
+                </div> 
+            </div>
+
+        </div>
+        
+    </nav>
+
+<!--Dashboard (On My Information Tab)-->
+<div id="dashboardContainer">
+    <!--Dashboard Top Section- Basic User Info-->
+    <div id="dashboardTopSection" class="container-fluid mt-5 mb-2 px-5" style="min-height: fit-content">
+        <div class="row justify-content-center">
+            <!--Player Avatar Image-->
+            <div class="col-3 mx-auto d-flex align-items-center">
+                <img src="images/avatarIcon.png" alt="User Avatar" class="userAvatarImage">
+            </div>
+            <!--Player Greeting-->
+            <div class="col-9 my-auto px-5 d-flex flex-column align-items-left">
+                <!--"Welcome back," message-->
+                <h3 class="mb-0">Welcome back, </h3>
+                <!--[Player Name]-->
+                <h1 class="mb-0">Taylor Lynn </h1>
+            </div>
+        </div>
+        <div class="row justify-content-center text-center my-5">
+            <!--"Superhero Name: " [Player Name]"-->
+            <h2>Superhero Name: Tee Lynn</h2>
+        </div>
+        <!--Status Row-->
+        <div class="row justify-content-between my-5">
+            <!--"Learning Status: [numDays] Days-->
+            <div class="col-3 d-flex flex-column align-items-center">
+                <h5 class="blue-text">Learning Status:</h5>
+                <h3> 52 Days</h3>
+            </div>
+            <!--"Hero Status: [heroStatus]-->
+            <div class="col-3 d-flex flex-column align-items-center">
+                <h5 class="blue-text">Hero Status: </h5>
+                <h3> Superhero</h3>
+            </div>
+        </div>
+    </div>
+    
+    <!--Dashboard Top-Middle Tab Section- AI Resources Currently Displayed-->
+    <div id="dashboardTabSection" class="container-fluid" style="min-height: fit-content">
+        <div class="row mx-2 justify-content-around">
+            <!--My Information Tab Label-->
+            <div class="col-7 align-items-left">
+                <h2 class="tilt-left-unselected" >My Information</h2>
+            </div>
+            <!--AI Resources Tab Label-->
+            <div class="col-5  align-items-right">
+                <h2 class="tilt-right">AI Resources</h2>
+            </div>                
+        </div>
+    </div>
+
+    <!--Dashboard Middle Section- Superhero Avatar-->
+    <div id="dashboardMiddleAvatarSection" class="container-fluid text-center" style="min-height: fit-content">
+        <div class="row justify-content-center">
+            <!--New Avatar Button (not implemented)-->
+            <div class="col-3 d-flex flex-column align-items-center">
+                <img src="images/newAvatarIcon.png" alt="Create New Avatar Button Icon" class="icon-med">
+                <h6 class="my-3">New Avatar</h6>
+            </div>
+            <!--Avatar Image (EMPTY FOR NOW- only showing background right now)-->
+            <div class="col-6 align-items-center">
+                <img src="images/playerAvatar.png" alt="Player Avatar Image">
+            </div>        
+            <!--Edit Avatar Button (not implemented)-->
+            <div class="col-3 d-flex flex-column align-items-center">
+                <img src="images/editAvatarIcon.png" alt="Edit Avatar Button Icon" class="icon-med">
+                <h6 class="my-3">Edit Avatar</h6>
+            </div>
+        </div>
+    </div>
 
     <!--Dashboard Bottom Section- AI Resources Cards-->
-
+    <div id="dashboardBottomSection" class="container-fluid" style="min-height: fit-content">
+        
         <!--Option Buttons in Top Corner of AI Resources Menu-->
+        <div id="dashboardOptionButtons" class="row justify-content-between">
+            <div class="col-3 d-flex align-items-center">
+                <!--AI Information Button-->
+                <img src="images/aiInformationIcon.png" alt="AI Information Button Icon" class="icon-sm mx-auto"> <!--NEEDS JS HOVER IMPLEMENTATION-->
+            </div>
+            <div class="col-3 d-flex align-items-center" >
+                <!--AI Chat Button (not implemented)-->
+                <img src="images/chatAiIcon.png" alt="AI Chat Button Icon" class="icon-sm mx-auto">
+            </div>
+        </div>
 
-            <!--AI Information Button-->
+        <!--AI Resources Option Buttons-->
+        <div class="container-fluid" style="min-height: fit-content">
+            <div class="row my-4">
+                <!--Learning Option Button-->
+                <div class="col d-flex flex-column">
+                    <button>
+                        <img src="images/learningIcon.png" alt="education icon" class="icon-xtra-sm">
+                        &nbsp;Learning
+                    </button>
+                </div>
+                <!--Mentors Option Button-->
+                <div class="col d-flex flex-column">
+                    <button>
+                        <img src="images/mentorIcon.png" alt="mentor icon" class="icon-xtra-sm">
+                        &nbsp;Mentors
+                    </button>
+                </div>
+            </div>
+            <div class="row my-5 justify-content-center">
+                <!--Jobs Option Button-->
+                <div class="col d-flex flex-column">
+                    <button>
+                        <img src="images/jobsIcon.png" alt="jobs icon" class="icon-xtra-sm">
+                        &nbsp;Jobs
+                    </button>
+                </div>
+                <!--Universities Option Button-->
+                <div class="col d-flex flex-column">
+                    <button>
+                        <img src="images/universitiesIcon.png" alt="document icon" class="icon-xtra-sm">
+                        &nbsp;Universities
+                    </button>
+                </div>
 
-            <!--AI Chat Button-->
+            </div>
+            <div class="row my-4 w-80 justify-content-center">
+                <!--AI Version Dropdown Menu Option-->
+                <div class="col d-flex flex-column align-items-center">
+                    <!--NOT YET IMPLEMENTED-->
 
-        <!--AI Resources Cards-->
-
-            <!--Learning Card Button-->
-
-            <!--Mentors Card Button-->
-
-            <!--Jobs Card Button-->
-
-            <!--Universities Card Button-->
-
-            <!--DahVarsity AI Card Button-->
-
-                <!--DahVarsity AI -->
+                </div>
+            </div>
+           
+        </div>
+    </div>
+</div>
 
 <!--Steam Points-->
-
+<div id="steamPoints">
     <!--Steam Points Header-->
-
-        <!--Steam Points Heading-->
-
-        <!--Steam Points Information Button-->
-
+    <div id="steamPointsHeader" class="container-fluid" style="min-height: fit-content">
+        <div class="row justify-content-center">
+            <!--Steam Points Heading-->
+            <div class="col-5">
+                <h3>STEAM POINTS</h3>
+            </div>
+                <!--Steam Points Information Button-->
+            <div class="col-1">
+                <img src="images/informationIcon.png" alt="Information Icon" class="icon-points">
+            </div>
+        </div>
+    </div>
     <!--Steam Point Card Displays-->
+    <div id="steamPointCards" class="container-fluid">
 
-        <!--Science Steam Point Card-->
+        <!--First three steam point cards on first row-->
+        <div class="row justify-content-center">
+            <!--Science Steam Point Card-->
+            <div class="col-3 d-flex flex-column align-items-center">
+                <!--Science Steam Point Image-->
+                <img src="images/scienceIcon.png" alt="Science STEAM Point icon" class="icon-points">
+                <!--Science Steam Point Value-->
+                <h4>0</h4>
+                <!--Science Steam Point Label-->
+                <h6>Science</h6>
+            </div>
 
-            <!--Science Steam Point Image-->
+            <!--Technology Steam Point Card-->
+            <div class="col-3 d-flex flex-column align-items-center">
+                <!--Technology Steam Point Image-->
+                <img src="images/technologyIcon.png" alt="Technology STEAM Point icon" class="icon-points">
+                <!--Technology Steam Point Value-->
+                <h4>0</h4>
+                <!--Technology Steam Point Label-->
+                <h6>Technology</h6>
+            </div>
 
-            <!--Science Steam Point Value-->
-
-            <!--Science Steam Point Label-->
-
-        <!--Technology Steam Point Card-->
-
-            <!--Technology Steam Point Image-->
-
-            <!--Technology Steam Point Value-->
-
-            <!--Technology Steam Point Label-->
-
-        <!--Engineering Steam Point Card-->
-
-            <!--Engineering Steam Point Image-->
-
-            <!--Engineering Steam Point Value-->
-
-            <!--Engineering Steam Point Label-->
-
-        <!--Art Steam Point Card-->
-
-            <!--Art Steam Point Image-->
-
-            <!--Art Steam Point Value-->
-
-            <!--Art Steam Point Label-->
+            <!--Engineering Steam Point Card-->
+            <div class="col-3 d-flex flex-column align-items-center">
+                <!--Engineering Steam Point Image-->
+                <img src="images/engineeringIcon.png" alt="Engineering STEAM Point icon" class="icon-points">
+                <!--Engineering Steam Point Value-->
+                <h4>0</h4>
+                <!--Engineering Steam Point Label-->
+                <h6>Engineering</h6>
+            </div>
+        </div>
         
-        <!--Math Steam Point Card-->
+        <!--last two steam point cards on second row-->
+        <div class="row justify-content-center">
+            <!--Art Steam Point Card-->
+            <div class="col-3 d-flex flex-column align-items-center">
+                <!--Art Steam Point Image-->
+                <img src="images/artIcon.png" alt="Art STEAM Point icon" class="icon-points">            
+                <!--Art Steam Point Value-->
+                <h4>0</h4>
+                <!--Art Steam Point Label-->
+                <h6>Art</h6>
+            </div>
 
-            <!--Math Steam Point Image-->
+            <!--Math Steam Point Card-->
+            <div class="col-3 d-flex flex-column align-items-center">
+                <!--Math Steam Point Image-->
+                <img src="images/mathIcon.png" alt="Math STEAM Point icon" class="icon-points">
+                <!--Math Steam Point Value-->
+                <h4>0</h4>
+                <!--Math Steam Point Label-->
+                <h6>Math</h6>
+            </div>
+        </div>
+        
+    </div>
+</div>
 
-            <!--Math Steam Point Value-->
+</body>
 
-            <!--Math Steam Point Label-->
+</html>
