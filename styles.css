@@ -16,21 +16,115 @@ FFFF00- Accent Yellow
 1E1E2E- Background Blue
 
 */
+
+/*Containers Styling*/
+
+/*was to see borders better
+.container-fluid, .container-fluid > *, .container-fluid > * > *{
+    border-color: white;
+    border-style: solid;
+}
+*/
+
 body{
-    background-image: url("../images/dashboardBackground.png");
+    background-image: url("../images/myInformationDashboardBackground.png");
     background-repeat: no-repeat;
-    background-position: center center;
-    background-size: cover;
-    background-attachment: fixed;
+    background-size: contain;
+    background-attachment: static;
+    min-height: 100vh;
     background-color: #1E1E2E;
+
+}
+
+#dashboardContainer{
+    margin: 160px 80px 0px;
+}
+
+#dashboardMiddleAvatarSection{
+    margin: 220px 0px 120px;
+}
+
+nav{
+    margin-top: 20px;
+}
+
+#steamPoints {
+    margin: 100px 80px;
+    background-color: #1E1E2E;
+}
+
+/*Text Styling*/
+
+.blue-text{
+    color: #41ACD2 !important;
 }
 
 h1, h2, h3, h4, h5, h6{
     color: #FFFFFF !important;
 }
 
+h1{
+    font-size: 400% !important;
+}
+
+h2, h3, h4{
+    font-size: 250% !important;
+}
+
+h5, h6{
+    font-size: 125% !important;
+}
+
+#dashboardTabSection{
+    padding-left: 5%;
+}
+
+h2.tilt-left{
+    transform: rotate(-30deg);
+    padding-right: 20%;
+}
+
+h2.tilt-right{
+    padding-top: 10%;
+    transform: rotate(30deg);
+}
+
+/*Image Styling*/
+
 img{
   max-width: 100%;
   height: auto;
 }
 
+img.icon-xtra-sm{
+    padding: 6% 3%;
+    height: 120px;
+}
+
+img.icon-sm{
+    width: 50%;
+}
+
+img.icon-med{
+    width: 60%;
+}
+
+img.icon-points{
+    width: 60%;
+}
+
+/*Button Styling*/
+
+button{
+    color: #FFFFFF;
+    font-size: 36px !important;
+    background-color: #1E1E2E;
+    border-width: 5px !important;
+    text-align: top !important;
+    text-justify: left !important;
+    line-height: 0% !important;
+    margin: 20% 5%;
+
+    border-radius: 20px !important;
+    border-color: #FFFF00;
+}
