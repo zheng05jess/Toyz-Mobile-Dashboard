@@ -344,11 +344,16 @@ button{
     cursor: pointer;
     transition: background 0.2s;
     font-size: 35px !important;
-    padding: 60px 60px !important;
+    padding: 35px 35px !important;
 }
 
 .purple-btn:hover {
     background-color: #7A00CC;
+}
+
+.btn-icon {
+    width: 60px !important;
+    height: 60px !important;
 }
 
 .small-btn {
@@ -374,8 +379,8 @@ button{
 }
 
 .btn-with-icon .btn-icon {
-    width: 100px;            
-    height: 120px;
+    width: 120px;            
+    height: 140px;
 }
 
 .btn-with-icon .btn-text {
