@@ -12,7 +12,8 @@
     <link href='https://fonts.googleapis.com/css?family=Lato' rel='stylesheet' type='text/css'>
 </head>
 
-<body>
+<body id="my-info-page">
+    
 <!--Nav Bar (center DahVarsity AI logo included in background image, buttons)-->
     <nav>
         <div id="navbar" class="container-fluid text-center" style="min-height: fit-content">
@@ -76,11 +77,11 @@
         <div class="row mx-2 justify-content-around">
             <!--My Information Tab Label-->
             <div class="col-7 align-items-left">
-                <h2 class="tilt-left">My Information</h2>
+                <h2 class="tilt-left" id="myInfoBtn">My Information</h2>
             </div>
             <!--AI Resources Tab Label-->
             <div class="col-5  align-items-right">
-                <h2 class="tilt-right">AI Resources</h2>
+                <h2 class="tilt-right" id="aiResourcesBtn">AI Resources</h2>
             </div>                
         </div>
     </div>
@@ -148,7 +149,7 @@
                 </div>
                 <!--Resume Option Button-->
                 <div class="col d-flex flex-column">
-                    <button>
+                    <button id="resumeBtn">
                         <img src="images/resumeIcon.png" alt="document icon" class="icon-xtra-sm">
                         &nbsp;<span>Resume</span>
                     </button>
@@ -245,6 +246,59 @@
         
     </div>
 </div>
+
+<!-- STEAM Points Info Pop-up -->
+<div id="steamInfoModal" class="steam-modal-overlay" style="display:none;">
+    <div class="steam-modal">
+        <div class="steam-header">
+            <span class="steam-back-arrow">&#8592;</span>
+            <h2>Steam Points Info</h2>
+        </div>
+        <p>
+            Steam Points are earned by completing activities in the curriculum. Each category (Science, Technology, Engineering, Art, Math) tracks your progress.
+        </p>
+    </div>
+</div>
+
+<!-- RESUME POPUP MODAL (overlay) -->
+<div id="popupModal" class="popup-modal-overlay" style="display:none;">
+    <div class="popup-modal">
+
+        <div class="popup-header">
+            <span class="back-arrow">&#8592;</span>
+            <h2>Resume</h2>
+        </div>
+
+        <h4 class="resume-title">Resume 1:</h4>
+
+        <div class="resume-box">
+            <img src="images/micIcon.png" class="mic-icon">
+        </div>
+
+        <div class="resume-btn-row">
+            <button class="purple-btn">Generate Resume</button>
+            <button class="purple-btn">Upload Resume</button>
+        </div>
+
+        <div class="resume-btn-row">
+            <div class="btn-with-icon">
+                <img src="images/deleteIcon.png" class="btn-icon">
+                <p class="btn-text">Delete Resume</p>
+            </div>
+            <div class="btn-with-icon">
+                <img src="images/saveIcon.png" class="btn-icon">
+                <p class="btn-text">Save Resume</p>
+            </div>
+        </div>
+
+        <button class="add-resume-btn">+ Add New Resume</button>
+
+    </div>
+</div>
+
+<!-- External JavaScript -->
+<script src="js/resumePop.js"></script>
+<script src="js/info.js"></script>
 
 </body>
 

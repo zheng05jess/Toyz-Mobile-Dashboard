@@ -2,8 +2,8 @@
 <html>
 <head>
     <meta charset="utf-8" />
-    <title>My Information Dashboard</title>
-    <meta name="User Dashboard Default Main Page - My Information " content="My Information Dashboard" description="one of two main dashboard pages on the My Information tab">
+    <title>AI Resources Dashboard</title>
+    <meta name="User Dashboard Default Main Page - AI Resources " content="AI Resources Dashboard" description="one of two main dashboard pages on the AI Resources tab">
     <link href="css/styles.css" type="text/css" rel="stylesheet" />
     <!--Link Bootstrap-5-->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
@@ -12,7 +12,7 @@
     <link href='https://fonts.googleapis.com/css?family=Lato' rel='stylesheet' type='text/css'>
 </head>
 
-<body>
+<body id="ai-resources-page">
 <!--Nav Bar (center DahVarsity AI logo included in background image, buttons)-->
     <nav>
         <div id="navbar" class="container-fluid text-center" style="min-height: fit-content">
@@ -76,11 +76,11 @@
         <div class="row mx-2 justify-content-around">
             <!--My Information Tab Label-->
             <div class="col-7 align-items-left">
-                <h2 class="tilt-left-unselected" >My Information</h2>
+                <h2 class="tilt-left" id="myInfoBtn">My Information</h2>
             </div>
             <!--AI Resources Tab Label-->
             <div class="col-5  align-items-right">
-                <h2 class="tilt-right">AI Resources</h2>
+                <h2 class="tilt-right" id="aiResourcesBtn">AI Resources</h2>
             </div>                
         </div>
     </div>
@@ -125,7 +125,7 @@
             <div class="row my-4">
                 <!--Learning Option Button-->
                 <div class="col d-flex flex-column">
-                    <button>
+                    <button id="learningBtn">
                         <img src="images/learningIcon.png" alt="education icon" class="icon-xtra-sm">
                         &nbsp;Learning
                     </button>
@@ -166,6 +166,7 @@
         </div>
     </div>
 </div>
+
 
 <!--Steam Points-->
 <div id="steamPoints">
@@ -243,6 +244,92 @@
         
     </div>
 </div>
+
+<!-- AI Information Pop-up -->
+<div id="aiInfoModal" class="ai-modal-overlay" style="display:none;">
+    <div class="ai-modal">
+        <div class="ai-header">
+            <span class="ai-back-arrow">&#8592;</span>
+            <h2>AI Information</h2>
+        </div>
+        <p>
+            This AI Information section provides insights, tips, and explanations about the platform’s AI features to help you navigate and use them effectively.
+        </p>
+    </div>
+</div>
+
+<!-- STEAM Points Info Pop-up -->
+<div id="steamInfoModal" class="steam-modal-overlay" style="display:none;">
+    <div class="steam-modal">
+        <div class="steam-header">
+            <span class="steam-back-arrow">&#8592;</span>
+            <h2>Steam Points Info</h2>
+        </div>
+        <p>
+            Steam Points are earned by completing activities in the curriculum. Each category (Science, Technology, Engineering, Art, Math) tracks your progress.
+        </p>
+    </div>
+</div>
+
+<!-- LEARNINGS POPUP MODAL (overlay) -->
+<div id="popupModal" class="popup-modal-overlay" style="display:none;">
+    <div class="popup-modal">
+
+        <div class="popup-header">
+            <span class="back-arrow">&#8592;</span>
+            <h2>Learning</h2>
+        </div>
+
+        <h3 class="learning-title">TOYZSTEAM CURRICULUM</h3>
+        <h4 class ="learning-subheading">Our curriculum was developed at Carnegie Mellon University and covers these topics: </h4>
+        <div class = "course-list">
+            <!--SUPERHERO RAP STORYTELLING CARD-->
+            <div class = "course-card">
+                <img src = "images/learning1Icon.png" class = "course-icon">
+                <div class = "course-info">
+                    <h4>01 SUPERHERO RAP STORYTELLING</h4>
+                    <p class="card-subtext">Welcome to the Superhero Rap Idealism World</p>
+                    <button class = "purple-btn">More about this course</button>
+                </div>
+            </div>
+
+            <!--SPACE TRAVEL CARD-->
+            <div class = "course-card">
+                <img src = "images/learning2Icon.png" class = "course-icon">
+                <div class = "course-info">
+                    <h4>02 SPACE TRAVEL</h4>
+                    <p class="card-subtext">Discover the wonders of space</p>
+                    <button class = "purple-btn">More about this course</button>
+                </div>
+            </div>
+
+            <!--VISUAL AND CONCEPT ART CARD-->
+            <div class = "course-card">
+                <img src = "images/learning3Icon.png" class = "course-icon">
+                <div class = "course-info">
+                    <h4>03 VISUAL AND CONCEPT ART</h4>
+                    <p class="card-subtext">Ideate your superhero</p>
+                    <button class = "purple-btn">More about this course</button>
+                </div>
+            </div>
+
+            <!--AUDIO AND SOUND PRODUCTION CARD-->
+            <div class = "course-card">
+                <img src = "images/learning4Icon.png" class = "course-icon">
+                <div class = "course-info">
+                    <h4>04 AUDIO AND SOUND PRODUCTION</h4>
+                    <p class="card-subtext">Tell your story</p>
+                    <button class = "purple-btn">More about this course</button>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</div>
+
+<!-- External JavaScript -->
+<script src="js/learningPop.js"></script>
+<script src="js/info.js"></script>
 
 </body>
 

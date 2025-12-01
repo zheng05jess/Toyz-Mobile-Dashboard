@@ -1,0 +1,433 @@
+
+
+
+/*Colors:
+
+FFFFFF - White
+
+FFFF00- Accent Yellow
+
+41ACD2- Accent Blue
+
+9933FF- Accent Purple
+
+3A0555- Background Accent Purple
+
+1E1E2E- Background Blue
+
+*/
+
+/*Containers Styling*/
+
+/*was to see borders better
+.container-fluid, .container-fluid > *, .container-fluid > * > *{
+    border-color: white;
+    border-style: solid;
+}
+*/
+
+#my-info-page {
+    background-image: url("../images/myInformationDashboardBackground.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-attachment: static;
+    min-height: 100vh;
+    background-color: #1E1E2E;
+
+}
+
+#ai-resources-page{
+    background-image: url(../images/aiResourcesDashboardBackground.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-attachment: static;
+    min-height: 100vh;
+    background-color: #1E1E2E;
+
+}
+
+#dashboardContainer{
+    margin: 160px 80px 0px;
+}
+
+#dashboardMiddleAvatarSection{
+    margin: 220px 0px 120px;
+}
+
+nav{
+    margin-top: 20px;
+}
+
+#steamPoints {
+    margin: 100px 80px;
+    background-color: #1E1E2E;
+}
+
+/*Text Styling*/
+
+.blue-text{
+    color: #41ACD2 !important;
+}
+
+h1, h2, h3, h4, h5, h6{
+    color: #FFFFFF !important;
+}
+
+h1{
+    font-size: 400% !important;
+}
+
+h2, h3, h4{
+    font-size: 250% !important;
+}
+
+h5, h6{
+    font-size: 125% !important;
+}
+
+#dashboardTabSection{
+    padding-left: 5%;
+}
+
+h2.tilt-left{
+    transform: rotate(-30deg);
+    padding-right: 20%;
+}
+
+h2.tilt-right{
+    padding-top: 10%;
+    transform: rotate(30deg);
+}
+
+/*Image Styling*/
+
+img{
+  max-width: 100%;
+  height: auto;
+}
+
+img.icon-xtra-sm{
+    padding: 6% 3%;
+    height: 120px;
+}
+
+img.icon-sm{
+    width: 50%;
+}
+
+img.icon-med{
+    width: 60%;
+}
+
+img.icon-points{
+    width: 60%;
+}
+
+/*Button Styling*/
+
+button{
+    color: #FFFFFF;
+    font-size: 36px !important;
+    background-color: #1E1E2E;
+    border-width: 5px !important;
+    text-align: top !important;
+    text-justify: left !important;
+    line-height: 0% !important;
+    margin: 20% 5%;
+
+    border-radius: 20px !important;
+    border-color: #FFFF00;
+}
+
+/* Tabs */
+#myInfoBtn, #aiResourcesBtn {
+    cursor: pointer;        
+    transition: color 0.2s, transform 0.2s;
+}
+
+#myInfoBtn:hover, #aiResourcesBtn:hover {
+    color: #FFFF00;         
+    transform: scale(1.05);   
+}
+
+/* AI Info Modal Overlay */
+.ai-modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(30,30,46,0.85);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow-y: auto;
+}
+.ai-modal {
+    background-color: #3A0555;
+    padding: 30px 40px;
+    border-radius: 20px;
+    max-width: 600px;
+    width: 90%;
+    color: #FFFFFF;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    box-shadow: 0 0 20px rgba(0,0,0,0.7);
+}
+
+.ai-header {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.ai-header h2 {
+    margin: 0;
+    font-size: 2em;
+    color: #FFFF00;
+}
+
+.ai-back-arrow {
+    cursor: pointer;
+    font-size: 1.8em;
+    color: #FFFF00;
+    transition: transform 0.2s;
+}
+
+.ai-back-arrow:hover {
+    transform: scale(1.2);
+}
+
+
+/* Steam Info Modal Overlay */
+.steam-modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(30,30,46,0.85);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow-y: auto;
+}
+
+.steam-modal {
+    background-color: #3A0555;
+    padding: 30px 40px;
+    border-radius: 20px;
+    max-width: 600px;
+    width: 90%;
+    color: #FFFFFF;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    box-shadow: 0 0 20px rgba(0,0,0,0.7);
+}
+
+.steam-header {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.steam-header h2 {
+    margin: 0;
+    font-size: 2em;
+    color: #FFFF00;
+}
+
+.steam-back-arrow {
+    cursor: pointer;
+    font-size: 1.8em;
+    color: #FFFF00;
+    transition: transform 0.2s;
+}
+
+.steam-back-arrow:hover {
+    transform: scale(1.2);
+}
+
+/* Pop-up */
+.popup-modal-overlay {
+    position: fixed;          
+    top: 0;
+    left: 0;
+    width: 100vw;            
+    height: 100vh;            
+    background-color: rgba(30,30,46,0.85); 
+    display: flex;            
+    justify-content: center;
+    align-items: center;
+    z-index: 99999 !important;
+    overflow-y: auto; 
+}
+
+.popup-modal {
+    background-color: #3A0555;
+    padding: 40px;
+    border-radius: 0;
+    width: 100vw;
+    height: 75%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    box-shadow: 0 0 20px rgba(0,0,0,0.7);
+}
+
+.popup-header {
+    display: flex;
+    align-items: center;
+    font-size: 1.5em;
+    gap: 0px;
+}
+
+.popup-header h2 {
+    margin: 0;
+    font-size: 2em;
+    color: #FFFF00; 
+}
+
+.back-arrow {
+    cursor: pointer;
+    font-size: 6em;
+    color: #FFFF00;
+    transition: transform 0.2s;
+}
+
+.back-arrow:hover {
+    transform: scale(1.2);
+}
+
+/* Resume Pop-up*/
+.resume-title {
+    color: #41ACD2; /* accent blue */
+    margin: 0;
+}
+
+/* Resume box (where the resume content/icon is displayed) */
+.resume-box {
+    background-color: #D1CDD1;
+    border-radius: 15px;
+    padding: 20px;
+    display: flex;
+    justify-content: center;   
+    align-items: center; 
+    position: relative; 
+    width: 100%;       
+    max-width: 900px; 
+    min-height: 600px;
+}
+
+.resume-box .mic-icon {
+    width: 80px;
+    height: 100px;
+    position: absolute;        
+    bottom: 10px;              
+    left: 10px;
+}
+
+.resume-btn-row {
+    display: flex;
+    justify-content: space-between;
+    gap: 15px;
+}
+
+.purple-btn {
+    background-color: #9933FF; 
+    color: #FFFFFF;
+    border: none;
+    padding: 12px 20px;
+    border-radius: 12px;
+    cursor: pointer;
+    transition: background 0.2s;
+    font-size: 35px !important;
+    padding: 60px 60px !important;
+}
+
+.purple-btn:hover {
+    background-color: #7A00CC;
+}
+
+.small-btn {
+    background-color: #41ACD2; 
+    color: #FFFFFF;
+    border: none;
+    padding: 10px 16px;
+    border-radius: 12px;
+    cursor: pointer;
+    font-size: 16px !important;
+    padding: 20px 20px !important;
+}
+
+.small-btn:hover {
+    background-color: #3399CC;
+}
+
+.btn-with-icon {
+    display: flex;
+    flex-direction: column;  
+    align-items: center;   
+    gap: 8px;              
+}
+
+.btn-with-icon .btn-icon {
+    width: 100px;            
+    height: 120px;
+}
+
+.btn-with-icon .btn-text {
+    color: #FFFFFF !important;        
+    font-size: 30px !important;            
+    text-align: center !important;
+}
+
+/* Add new resume button */
+.add-resume-btn {
+    background-color: #FFFF00; 
+    color: #3A0555; 
+    border: none;
+    padding: 12px 20px;
+    border-radius: 15px;
+    font-weight: bold;
+    cursor: pointer;
+    margin-top: 20px;
+    align-self: center;
+    font-size: 40px !important;
+    padding: 60px 200px !important;
+}
+
+.add-resume-btn:hover {
+    background-color: #FFEB3B;
+}
+
+/* Learning pop-up */
+.learning-title {
+   text-align: center !important;
+   font-size: 50px !important;
+}
+
+.learning-subheading {
+    text-align: center !important;
+}
+
+.course-card {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    background: #1c1c2e;
+    border-radius: 12px;
+    padding: 16px;
+    margin-bottom: 20px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+    color: white;
+    gap: 20px;
+}
+
+.card-subtext {
+    font-size: 1.8em;     
+    font-weight: 500;    
+    margin: 10px 0; 
+}
